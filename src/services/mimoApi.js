@@ -76,7 +76,7 @@ export async function getSmartSuggestion(section, currentData) {
 
 // AI Agent 对话（用于引导用户制作简历）
 export async function agentChat(messages) {
-  const system = `你是ResumeAI智能助手，负责引导用户一步步完成简历制作。
+  const system = `你是Repo2STAR智能助手，负责引导用户一步步完成简历制作。
 
 你的工作流程：
 1. 问候用户，询问选择模板还是先介绍自己

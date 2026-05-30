@@ -112,7 +112,7 @@ export default function AgentChat({ isOpen, onClose }) {
       templateOptions.push({ label: '先填信息，稍后选模板', value: '先填信息' });
 
       addMessage('assistant',
-        `你好！我是 ResumeAI 智能助手 👋\n\n我可以帮你：\n- 📋 **选择模板**并引导填写简历\n- 📎 **上传文件**（PDF/Word/图片）自动解析填入\n- ✨ **AI 润色**简历内容\n\n首先，你想用哪个模板？`,
+        `你好！我是 Repo2STAR 智能助手 👋\n\n我可以帮你：\n- 📋 **选择模板**并引导填写简历\n- 📎 **上传文件**（PDF/Word/图片）自动解析填入\n- ✨ **AI 润色**简历内容\n\n首先，你想用哪个模板？`,
         templateOptions,
       );
       setStage(AGENT_STAGES.TEMPLATE);
@@ -400,7 +400,7 @@ export default function AgentChat({ isOpen, onClose }) {
       <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-gradient-to-r from-primary-600 to-primary-500 rounded-t-2xl">
         <div className="flex items-center gap-2 text-white">
           <Bot size={20} />
-          <span className="font-semibold">ResumeAI 智能助手</span>
+          <span className="font-semibold">Repo2STAR 智能助手</span>
           <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">Agent</span>
         </div>
         <div className="flex items-center gap-1">

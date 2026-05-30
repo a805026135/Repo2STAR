@@ -1,4 +1,4 @@
-# ResumeAI - AI 驱动的 GitHub 简历生成器
+# Repo2STAR - AI 驱动的 GitHub 简历生成器
 
 > **你只管写代码，它负责把代码翻译成 Offer。**
 >
@@ -41,9 +41,9 @@
 
 ## 项目简介
 
-ResumeAI（内部代号 **Repo2STAR**）是一个全栈 AI 应用，旨在帮助开发者将 GitHub 上的代码成果转化为专业的求职简历。
+Repo2STAR 是一个全栈 AI 应用，旨在帮助开发者将 GitHub 上的代码成果转化为专业的求职简历。
 
-**核心理念：** 开发者的技术能力体现在代码中，而不是简历模板里。ResumeAI 通过 AI 深度理解你的每一个仓库——技术栈选择、架构设计、提交模式、代码质量——然后用专业的 STAR 法则（Situation-Task-Action-Result）将这些技术成果转化为招聘官看得懂的简历语言。
+**核心理念：** 开发者的技术能力体现在代码中，而不是简历模板里。Repo2STAR 通过 AI 深度理解你的每一个仓库——技术栈选择、架构设计、提交模式、代码质量——然后用专业的 STAR 法则（Situation-Task-Action-Result）将这些技术成果转化为招聘官看得懂的简历语言。
 
 **它不仅仅是一个简历模板工具，而是一个从代码分析到简历输出的完整 AI Pipeline。**
 
@@ -513,7 +513,7 @@ GitHub push event → Webhook → 后端接收
 ## 项目结构
 
 ```
-ResumeAI/
+Repo2STAR/
 ├── server/                              # 后端服务
 │   ├── index.js                         # Express 入口，路由注册，生产模式静态文件服务
 │   ├── start.js                         # 启动脚本（加载 .env 环境变量）
@@ -767,8 +767,8 @@ ResumeAI/
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/a805026135/ResumeAI.git
-cd ResumeAI
+git clone https://github.com/a805026135/Repo2STAR.git
+cd Repo2STAR
 ```
 
 ### 2. 安装依赖
@@ -807,7 +807,7 @@ PORT=3001                                       # 后端端口
 1. 前往 [GitHub Settings > Developer settings > OAuth Apps](https://github.com/settings/developers)
 2. 点击 **New OAuth App**
 3. 填写信息：
-   - **Application name:** `ResumeAI`
+   - **Application name:** `Repo2STAR`
    - **Homepage URL:** `http://localhost:5173`
    - **Authorization callback URL:** `http://localhost:3001/api/auth/callback`
 4. 创建后复制 **Client ID** 和 **Client Secret** 到 `.env`
