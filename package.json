@@ -1,0 +1,45 @@
+{
+  "name": "resume-builder",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node --watch server/start.js\"",
+    "dev:frontend": "vite",
+    "dev:server": "node --watch server/start.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.99.0",
+    "@notionhq/client": "^5.22.0",
+    "@octokit/rest": "^22.0.1",
+    "concurrently": "^10.0.0",
+    "cors": "^2.8.6",
+    "docx": "^9.1.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.468.0",
+    "mammoth": "^1.8.0",
+    "node-cron": "^4.2.1",
+    "pdfjs-dist": "^4.9.155",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.5.2",
+    "react-markdown": "^9.0.1",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.5"
+  }
+}
